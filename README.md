@@ -1,6 +1,7 @@
 # spark-demo
-## for handling errors and exceptions in javaspark:
- you can use custom mapper for the user-defined exceptions to route the request-response objects to your custom mapper and return an appropriate response with any format which is needed. In some cases, you also can utilize built-in functions in Spark class like internalServerError and notFound.
+## For handling errors and exceptions in javaspark:
+I this example, I’d like to show you,How you can handle an exception in the javaspark framework.
+ You can use custom mapper for the user-defined exceptions to route the request-response objects to your custom mapper and return an appropriate response with any format which is needed. In some cases, you also can utilize built-in functions in Spark class like internalServerError and notFound.
  
  `exception(Exception.class, (exception, request,
                                                 response) -> {
@@ -13,8 +14,7 @@
               response.body(exception.getMessage());
           });`
 
-
-How to test:
+#How to test:
 
     steps:
         send this request to get normal response:
