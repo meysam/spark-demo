@@ -14,7 +14,7 @@ I this example, I’d like to show you,How you can handle an exception in the ja
               response.body(exception.getMessage());
           });`
 
-#How to test:
+# How to test:
 
     steps:
         send this request to get normal response:
